@@ -12,6 +12,8 @@ import android.widget.Toast;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
 
@@ -20,7 +22,7 @@ import static com.anamradu.timezen.MainActivity.holidayList;
 public class HolidaysListActivity extends AppCompatActivity {
 
     ListView mHolidayList = null;
-    List<String> adapterList;
+    public static List<String> adapterList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,7 +54,8 @@ public class HolidaysListActivity extends AppCompatActivity {
                 } catch (ParseException e) {
                     e.printStackTrace();
                 }
-                adapterList.add(daysLeft + " days until " + item.name + "\n" + dayDate + " " + item.date);
+                adapterList.add(item.date + " " + dayDate + "\n" + Long.toString(daysLeft) + " days until " + item.name);
+                Collections.sort(adapterList);
             }
         }
         final ArrayAdapter<String> adapter = new ArrayAdapter<String>(HolidaysListActivity.this,
@@ -82,6 +85,12 @@ public class HolidaysListActivity extends AppCompatActivity {
             MainActivity.holidayList.remove(cnt);
             holidayDate = sdfDate.parse(MainActivity.holidayList.get(cnt).date);
         }
+
+        /*Collections.sort(MainActivity.holidayList, new Comparator<HolidayItem>(){
+            public int compare(HolidayItem obj1, HolidayItem obj2) {
+                return obj1.date.compareTo(obj2.date);
+            }
+        });*/
     }
 
     public void OpenAddHolidayActivity(View view) {
