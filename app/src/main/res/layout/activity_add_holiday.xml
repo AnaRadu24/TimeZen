@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddHolidayActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="4dp"
+        android:background="@color/colorWhite">
+
+        <ImageView
+            android:id="@+id/imageView_girl"
+            android:layout_width="match_parent"
+            android:layout_height="256dp"
+            android:background="@drawable/girl_good_job" />
+
+        <EditText
+            android:id="@+id/editHolidayName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:hint="@string/holiday_name" />
+
+        <EditText
+            android:id="@+id/editHolidayDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:hint="@string/date_format"/>
+
+        <Button
+            android:id="@+id/button_add_holiday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@color/colorAccent"
+            android:text="@string/add_button"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

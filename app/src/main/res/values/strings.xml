@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TimeZen</string>
+    <string name="days">Days</string>
+    <string name="hours">Hours</string>
+    <string name="minutes">Minutes</string>
+    <string name="seconds">Seconds</string>
+    <string name="time_left">Time left until ... </string>
+    <string name="start_message">Know how much time is left!</string>
+    <string name="start_button">Start Timezen!</string>
+    <string name="add_button">Add Holiday</string>
+    <string name="countdown_button">Holiday Countdown</string>
+    <string name="date_format">yyyy-MM-dd</string>
+    <string name="holiday_name">Holiday Name</string>
+    <string name="listView_button">View Holiday List</string>
+</resources>

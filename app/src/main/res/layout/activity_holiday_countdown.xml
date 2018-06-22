@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".HolidayCountdownActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView_boy"
+        android:layout_width="fill_parent"
+        android:layout_height="272dp"
+        android:background="@drawable/boy_good_job"
+        />
+
+    <TextView
+        android:id="@+id/textTimeLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/time_left"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_boy" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTimeLeft">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/LinearLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="96dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/layout_background"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView_daysLeft"
+                    android:layout_width="fill_parent"
+                    android:layout_height="72dp"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="48dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_days"
+                    android:layout_width="fill_parent"
+                    android:layout_height="24dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="@string/days"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorLight"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout2"
+                android:layout_width="fill_parent"
+                android:layout_height="96dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/layout_background"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textHoursLeft"
+                    android:layout_width="fill_parent"
+                    android:layout_height="72dp"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="48dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_hours"
+                    android:layout_width="fill_parent"
+                    android:layout_height="24dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="@string/hours"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorLight"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout3"
+                android:layout_width="fill_parent"
+                android:layout_height="96dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/layout_background"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textMinutesLeft"
+                    android:layout_width="fill_parent"
+                    android:layout_height="72dp"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="48dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_minutes"
+                    android:layout_width="fill_parent"
+                    android:layout_height="24dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="@string/minutes"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorLight"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout4"
+                android:layout_width="fill_parent"
+                android:layout_height="96dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/layout_background"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textSecondsLeft"
+                    android:layout_width="fill_parent"
+                    android:layout_height="72dp"
+                    android:layout_weight="3"
+
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="48dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_seconds"
+                    android:layout_width="fill_parent"
+                    android:layout_height="24dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="@string/seconds"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorLight"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textUpcomingHoliday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+    <Button
+        android:id="@+id/buttonListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/layout_background"
+        android:onClick="OpenHolidaysListActivity"
+        android:padding="8dp"
+        android:text="@string/listView_button"
+        android:textColor="@color/colorLight"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
